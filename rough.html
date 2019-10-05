@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .display{
+        display: none;
+    }
+    .color{
+        color: blue
+    }
+    .bg{
+        background-color:rgb(210, 250, 169);
+        font-size: 22px;
+         
+    }
+    
+    </style>
+</head>
+<body>
+<div class="red">
+    <p>My NAme is Uzair</p>
+    <p>My NAme is Farukh</p>
+</div>
+<p>My Name is Arsalan</p>
+
+
+
+
+
+
+
+    <!-- <a href="JavaScript:void(0)" onClick="chnge();">Click me</a>
+<p>My name is zyzz</p>
+<p>My name is zyzz</p>
+<p>My name is zyzz</p>
+<p>My name is zyzz</p>
+<p>My name is zyzz</p> -->
+
+
+
+
+    <!-- <p id="para" class="color">My Name is Uzair... <a href="JavaScript:void(0);" onClick="clickMe()";>Click here for more</a></p>
+    
+    <img src="pic1.jpg" id="image" onmouseover="swap()" onmouseout="revrse()"> -->
+
+
+        <!-- Code:
+        <input type="text" id="input" onBlur='Newcity()'><br>
+        City:
+        <input type=text id="city"><br> -->
+    <script>
+        console.log(document.childNodes[1].childNodes[2].childNodes[1].getAttribute('class'));
+        var el = document.createElement('p');
+        var text = document.createTextNode("My first appendin Work")
+        el.appendChild(text)
+
+
+
+
+
+
+
+
+
+        function chnge(){
+            var para = document.getElementsByTagName('p');
+        console.log(para)
+            for(var i=0; i<para.length;i++){
+                para[i].style.color="red"
+                para[i].style.fontFamily="cursive"
+                para[i].style.fontSize="22px"
+                
+            }
+        }
+
+
+        function swap(){
+        var a = document.getElementById('image');
+        a.src="pic2.jpg"
+    }
+
+    function revrse(){
+        var b = document.getElementById("image");
+        b.src = "pic1.jpg"
+    }
+        
+        
+        function hide(){
+            document.getElementById('image').className = "display"
+            document.getElementById('para').className += " bg"
+        }
+
+
+
+     function clickMe(){
+         var newPara="My Name is uzair my class is web 2 my uni is ilma"
+         document.getElementById('para').innerHTML= newPara;
+     }
+
+
+
+    //  function Newcity(){ 
+    //     var value = document.getElementById("input").value;
+    // var cityName;
+    //     switch (value) {
+    //         case "1234":
+    //         cityName = "Karachi";
+        
+    //         break;
+    //         case "5678":
+    //         cityName = "Lahore";
+    //         break;
+    //         case "2468":
+    //         cityName="Islamabad"
+    //         break;
+    //         default:
+    //        cityName = "You have enter invalid code "
+    //     }
+    //     document.getElementById('city').value=cityName
+    //     console.log(cityName)
+    // }
+    
+    
+   
+    </script>
+
+</body>
+</html>

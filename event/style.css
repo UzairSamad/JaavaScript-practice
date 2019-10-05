@@ -1,0 +1,15 @@
+
+table,tr,td,th{
+border: 2px solid rgb(79, 105, 153);
+empty-cells: show;
+
+
+}
+table{
+    align-content: center;
+    margin-left: 56px;
+    margin-top: 20px;
+}
+td,th{
+    padding: 10px;
+}

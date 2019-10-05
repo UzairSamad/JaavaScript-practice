@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+function createObject(name,price,age){
+    this.name=name;
+    this.price=price;
+    this.age=age;
+}
+
+var plan4 =  new createObject("Uzair",45,21)
+console.log(plan4.age)
+var plan5 = new createObject("Ali",56,23)
+console.log(plan5.name);
+
+var newObj = {
+    name:"uzair",
+    age:51
+    
+}
+var list= []
+for(var prop in newObj){
+    list.push(prop);
+}
+console.log(list);
+
+
+
+console.log(newObj.hasOwnProperty("name"));
+
+
+
+
+
+
+
+
+//console.log(this.dMonths[0]);
+
+
+
+
+function checkdiscount(mon){
+    var price=plan1.price
+    var date= new Date();
+    var Month= date.getMonth();
+    for(var i = 0; i<plan1.dMonths.length;i++){
+        if(plan1.dMonths[i]===Month){
+            price = plan1.price* mon
+            break;
+        }
+
+    }
+    return price*12
+}
+
+var discounted = checkdiscount(.10);
+console.log(discounted);
+
+
+
+
+
+
+
+
+</script>
+    
+    
+    
+        
+</body>
+
+</html>
